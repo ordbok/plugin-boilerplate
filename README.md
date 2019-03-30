@@ -1,0 +1,2 @@
+# plugin-boilerplate
+Plugin example
