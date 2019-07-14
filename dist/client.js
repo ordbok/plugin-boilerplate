@@ -1,0 +1,2 @@
+define("@ordbok/plugin-boilerplate/dist/lib/index",["require","exports"],function(i,e){"use strict";function o(i,e){console.log("ORDBOK plugin boilerplate: "+i,JSON.stringify(e,void 0,"  "))}Object.defineProperty(e,"__esModule",{value:!0}),e.myUtilityFunction=o}),define("@ordbok/plugin-boilerplate",["@ordbok/plugin-boilerplate/dist/lib/index"],function(i){return i});
+//# sourceMappingURL=client.js.map
