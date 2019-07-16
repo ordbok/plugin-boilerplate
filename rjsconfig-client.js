@@ -4,9 +4,11 @@
     out: "dist/client.js",
     packages: [{
         name: "@ordbok/plugin-boilerplate",
-        main: "dist/lib/index"
-    }],
-    paths: {
-        "@ordbok/plugin-boilerplate/dist/lib": "dist/client"
-    }
+        main: "index",
+        location: 'dist/client'
+    }, {
+        name: "@ordbok/core",
+        main: "index",
+        location: "node_modules/@ordbok/core/dist/client"
+    }]
 })
