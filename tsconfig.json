@@ -13,7 +13,7 @@
         "dist",
         "node_modules"
     ],
-    "files": [
+    "include": [
         "sources/**/ordbok-plugin.ts",
     ]
 }

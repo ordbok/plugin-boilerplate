@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "@ordbok/plugin-boilerplate",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"author": "ORDBOK contributors",
 	"license": "MIT",
 	"description": "Dictionary plugin boilerplate",
