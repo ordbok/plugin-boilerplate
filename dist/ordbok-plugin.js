@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var MyPluginLib = require("../lib");
+var MyPluginLib = require("./lib");
 var MyPlugin = /** @class */ (function () {
     function MyPlugin() {
     }
