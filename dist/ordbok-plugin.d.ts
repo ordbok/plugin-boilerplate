@@ -1,5 +1,4 @@
-import { IMarkdownPage, Markdown } from '@ordbok/core';
-import { IPlugin } from '@ordbok/core/dist/plugin';
+import { IMarkdownPage, IPlugin, Markdown } from '@ordbok/core/dist';
 declare class MyPlugin implements IPlugin {
     onAssembled(): void;
     onAssembling(sourceFolder: string, targetFolder: string): void;

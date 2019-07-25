@@ -1,5 +1,4 @@
-import { IMarkdownPage, Markdown } from '@ordbok/core';
-import { IPlugin } from '@ordbok/core/dist/plugin';
+import { IMarkdownPage, IPlugin, Markdown } from '@ordbok/core/dist';
 import * as MyPluginLib from './lib';
 
 class MyPlugin implements IPlugin {
