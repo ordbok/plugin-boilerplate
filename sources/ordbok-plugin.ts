@@ -1,23 +1,72 @@
 import { IMarkdownPage, IPlugin, Markdown } from '@ordbok/core/dist';
 import * as MyPluginLib from './lib';
 
+/* *
+ *
+ *  Classes
+ *
+ * */
+
+/**
+ * ORDBOK Plugin
+ */
 class MyPlugin implements IPlugin {
 
-    public onAssembled() {
+    /**
+     * Called after assembling. Can be removed, if not needed.
+     */
+    public onAssembled (): void {
+
         MyPluginLib.myUtilityFunction('onAssembled', {});
     }
 
-    public onAssembling (sourceFolder: string, targetFolder: string) {
+    /**
+     * Called before assembling. Can be removed, if not needed.
+     *
+     * @param sourceFolder
+     *        Source folder
+     *
+     * @param targetFolder
+     *        Target folder
+     */
+    public onAssembling (sourceFolder: string, targetFolder: string): void {
+
         MyPluginLib.myUtilityFunction('onAssembling', { sourceFolder, targetFolder });
     }
 
-    public onReadFile (sourceFile: string, markdown: Markdown) {
+    /**
+     * Called after reading a markdown file. Can be removed, if not needed.
+     *
+     * @param sourceFile
+     *        Source file
+     *
+     * @param markdown
+     *        File's markdown
+     */
+    public onReadFile (sourceFile: string, markdown: Markdown): void {
+
         MyPluginLib.myUtilityFunction('onReadFile', { sourceFile, markdown });
     }
 
-    public onWriteFile (targetFile: string, markdownPage: IMarkdownPage) {
+    /**
+     * Called before writing a dictionary entry. Can be removed, if not needed.
+     *
+     * @param targetFile
+     *        Target file
+     *
+     * @param markdownPage
+     *        File's markdown
+     */
+    public onWriteFile (targetFile: string, markdownPage: IMarkdownPage): void {
+
         MyPluginLib.myUtilityFunction('onWriteFile', { targetFile, markdownPage });
     }
 }
+
+/* *
+ *
+ *  Exports
+ *
+ * */
 
 export const ordbokPlugin = new MyPlugin();
