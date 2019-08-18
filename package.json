@@ -22,6 +22,9 @@
 	"engines": {
 		"node": ">=10.0.0"
 	},
+	"peerDependencies": {
+		"@ordbok/core": ">=0.0.8"
+	},
 	"files": [
 		"dist",
 		"LICENSE",
