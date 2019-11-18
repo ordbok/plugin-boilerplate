@@ -1,43 +1,48 @@
 {
-	"private": true,
-	"name": "@ordbok/plugin-boilerplate",
-	"version": "0.0.0",
-	"author": "ORDBOK contributors",
-	"license": "MIT",
-	"description": "Dictionary plugin boilerplate",
-	"keywords": [
-		"dictionary",
-		"ordbok"
-	],
-	"bugs": "https://github.com/ordbok/plugin-boilerplate/issues",
-	"homepage": "https://github.com/ordbok/plugin-boilerplate#readme",
-	"repository": "https://github.com/ordbok/plugin-boilerplate.git",
-	"devDependencies": {
-		"@ordbok/core": "github:ordbok/core#v0.0.8",
-		"@types/node": "^10.0.0",
-		"requirejs": "2.3.6",
-		"typedoc": "0.14.2",
-		"typescript": "3.4.5"
-	},
-	"engines": {
-		"node": ">=10.0.0"
-	},
-	"peerDependencies": {
-		"@ordbok/core": ">=0.0.8"
-	},
-	"files": [
-		"dist",
-		"LICENSE",
-		"README.md"
-	],
-	"main": "dist/lib/index.js",
-	"scripts": {
-		"build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
-		"build-1": "tsc --build tsconfig.json tsconfig-client.json",
-		"build-2": "r_js -o rjsconfig-client.js",
-		"build-3": "typedoc --gitRevision master --mode file --name \"ORDBOK Plugin Boilerplate\" --out docs --tsconfig tsconfig-client.json",
-		"clean": "rm -rf dist",
-		"watch": "tsc --build tsconfig.json --watch"
-	},
-	"types": "dist/lib/index.d.ts"
+    "private": true,
+    "author": "ORDBOK contributors",
+    "bugs": "https://github.com/ordbok/plugin-boilerplate/issues",
+    "description": "Dictionary plugin boilerplate",
+    "homepage": "https://github.com/ordbok/plugin-boilerplate#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "name": "@ordbok/plugin-boilerplate",
+    "repository": "https://github.com/ordbok/plugin-boilerplate.git",
+    "types": "index.d.ts",
+    "version": "0.1.0",
+    "devDependencies": {
+        "@ordbok/typedoc-theme": "~0.6.0",
+        "@ordbok/core": "~v0.1.0",
+        "@types/node": "^10.0.0",
+        "browserify": "^16.5.0",
+        "typedoc": "~0.15.2",
+        "typescript": "~3.7.2"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "files": [
+        "lib/",
+        "index.d.ts",
+        "index.js",
+        "LICENSE",
+        "ordbok-plugin.d.ts",
+        "ordbok-plugin.js",
+        "README.md"
+    ],
+    "keywords": [
+        "dictionary",
+        "ordbok"
+    ],
+    "peerDependencies": {
+        "@ordbok/core": ">=0.1.0"
+    },
+    "scripts": {
+        "build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
+        "build-1": "tsc --build sources/tsconfig/*.json",
+        "build-2": "browserify --outfile client/plugin-boilerplate.js --standalone PluginBoilerplate index.js",
+        "build-3": "cd sources/tsconfig && typedoc --out ../../docs --tsconfig typedoc.json",
+        "clean": "rm -rf $(< .clean)",
+        "watch": "tsc --build tsconfig/*.json --watch"
+    }
 }

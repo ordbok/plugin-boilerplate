@@ -1,4 +1,5 @@
-import { IMarkdownPage, IPlugin, Markdown } from '@ordbok/core/dist';
+import { IMarkdownPage, Markdown } from '@ordbok/core';
+import { IPlugin } from '@ordbok/core/lib/internals';
 import * as MyPluginLib from './lib';
 
 /* *

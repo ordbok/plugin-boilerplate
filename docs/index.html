@@ -38,10 +38,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -64,8 +60,12 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="ordbok-plugin-boilerplate">ORDBOK plugin boilerplate</h1>
-				<h2 id="get-started">Get started</h2>
+				<a href="#ordbok-plugin-boilerplate" id="ordbok-plugin-boilerplate" style="color: inherit; text-decoration: none;">
+					<h1>ORDBOK plugin boilerplate</h1>
+				</a>
+				<a href="#get-started" id="get-started" style="color: inherit; text-decoration: none;">
+					<h2>Get started</h2>
+				</a>
 				<p>Files of interest are:</p>
 				<ul>
 					<li><code>sources/lib/index.ts</code>: This should contain common functions that need to be shared between client
@@ -76,7 +76,9 @@
 					<li><code>package.json</code>: The node package settings for your plugin.</li>
 					<li><code>rjsconfig.json</code>: The client package settings of your plugin library.</li>
 				</ul>
-				<h2 id="compiling">Compiling</h2>
+				<a href="#compiling" id="compiling" style="color: inherit; text-decoration: none;">
+					<h2>Compiling</h2>
+				</a>
 				<p>Run <code>npm run build</code> to compile the sources into the <code>dist</code> folder. This creates folders for client
 				and core:</p>
 				<ul>
@@ -86,7 +88,9 @@
 					<li><code>dist/client.js</code>: Your plugin library as a package.</li>
 				</ul>
 				<p><em>Note:</em> Everything named <code>@ordbok/plugin-boilerplate</code> should be renamed with your own plugin name.</p>
-				<h2 id="plugin-usage">Plugin usage</h2>
+				<a href="#plugin-usage" id="plugin-usage" style="color: inherit; text-decoration: none;">
+					<h2>Plugin usage</h2>
+				</a>
 				<p>You have to create a <code>ordbok.json</code> configuration file in the folder in which you will run the ordbok
 				assembler.</p>
 				<p>In the configuration file you can specify folders where the ORDBOK assembler should search for
@@ -129,6 +133,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -177,7 +182,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
