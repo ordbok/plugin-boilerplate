@@ -35,7 +35,7 @@
         "ordbok"
     ],
     "peerDependencies": {
-        "@ordbok/core": ">=0.1.1"
+        "@ordbok/core": ">=0.2.0"
     },
     "scripts": {
         "build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
