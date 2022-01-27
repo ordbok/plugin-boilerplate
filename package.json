@@ -9,10 +9,10 @@
     "name": "@ordbok/plugin-boilerplate",
     "repository": "https://github.com/ordbok/plugin-boilerplate.git",
     "types": "index.d.ts",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "devDependencies": {
         "@ordbok/typedoc-theme": "~0.6.0",
-        "@ordbok/core": "~v0.2.1",
+        "@ordbok/core": "~v0.2.2",
         "@types/node": "^14.10.3",
         "browserify": "^17.0.0",
         "typescriptlibs.typedoc": "github:typescriptlibs/typescriptlibs.typedoc#v0.19.3",
@@ -35,7 +35,7 @@
         "ordbok"
     ],
     "peerDependencies": {
-        "@ordbok/core": ">=0.2.1"
+        "@ordbok/core": ">=0.2.2"
     },
     "scripts": {
         "build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
