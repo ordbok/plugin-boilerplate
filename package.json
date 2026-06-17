@@ -14,7 +14,7 @@
         "@ordbok/typedoc-theme": "~0.6.0",
         "@ordbok/core": "~0.2.4",
         "@types/node": "^14.10.3",
-        "browserify": "^17.0.0",
+        "browserify": "^17.0.1",
         "typescriptlibs.typedoc": "github:typescriptlibs/typescriptlibs.typedoc#v0.19.4",
         "typescript": "~3.9.10"
     },
